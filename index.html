@@ -1,11 +1,45 @@
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>tommy-web-app</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- PWA Manifest dan Icon -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-512.png">
+
+<!-- PWA Settings -->
+<meta name="theme-color" content="#f9f9f9">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+
+<!-- Styles -->
+<link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y2/l/0,cross/nC2XYYUISfm.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y8/l/0,cross/Z39OoPuXzgz.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yT/l/0,cross/RYoQlJMNiM3.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yv/l/0,cross/VraZqV-tU8r.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="style.css?v=2">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FK1EY26W82');
+</script>
+
   <style>
+    html {
+      height: 100%;
+      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+    body {
+  -webkit-text-size-adjust: 100%;
+}
+
     :root{
       --bg:#ffffff; --card:#f8f9fa; --muted:#6c757d; --accent:#007bff;
       font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -18,7 +52,7 @@
       justify-content:center;
       align-items:flex-start;
       padding:0px;
-      font-family:inherit;
+      font-family:Questrial;
     }
     .card{
       width:100%;
@@ -115,7 +149,7 @@
     </div>
     <div class="name">
       TM Unicreat <a style="color:#608aff;">™</a>
-      <i class="fa fa-check-circle" style="color:#7389fa; background:white; border-radius:50%; padding:4px;"></i>
+      <i class="fa fa-check-circle" style="font-size: 25px;color:#7389fa; background:white; border-radius:50%;"></i>
     </div>
     <div class="role">Pembuat — Tommy Adhelyno | Developer</div>
     <div class="bio">TOMMY WEB APPS — keterangan: alat keyboard multi fungsi. pencarian unicode teks kumpulan karakter teks symbol icon dan emoji. serta pembuatan gambar sampul dan foto kreatif juga id card pw</div>
@@ -126,11 +160,11 @@
 <button class="share-btn" id="shareBtn">
    share<i class="fa fa-share-alt" style="font-size:22px;"></i>
 </button>
-
+    </footer>
 <script>
   const shareBtn = document.getElementById('shareBtn');
   shareBtn.addEventListener('click', async () => {
-    const apkLink = 'https://example.com/app.apk'; // ganti dengan link APK kamu
+    const apkLink = 'https://example.com/app.apk';
     if (navigator.share) {
       try {
         await navigator.share({
@@ -143,13 +177,12 @@
         console.error('Gagal berbagi:', err);
       }
     } else {
-      // fallback: langsung buka link APK
       window.location.href = apkLink;
     }
   });
 </script>
 
-    </footer>
+
   </div>
 </body>
 </html>
