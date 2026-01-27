@@ -44,10 +44,9 @@
       align-items:flex-start;
     }
     .avatar{
-      width:180px;
-      height:180px;
-      border-radius:50%;
-      margin:0 auto 20px;
+      border-radius:5px;
+      border:solid 0.8px #ccc;
+      margin:0 auto 0px;
       overflow:hidden;
       box-shadow:0 4px 15px rgba(0,0,0,0.1);
     }
@@ -59,21 +58,24 @@
     .name{
       font-size:28px;
       font-weight:700;
-      margin-bottom:8px;
+      margin-bottom:0px;
       color:#333;
       text-align:center;
       width:100%;
     }
     .role{
-      font-size:16px;
+      font-size:14px;
       color:var(--muted);
       margin-bottom:12px;
+      font-family: normal;
       text-align:left;
+      font-weight: 500;
       width:100%;
     }
     .bio{
       font-size:14px;
-      color:#3f3f3f;
+      color:var(--muted);
+      font-family: normal;
       line-height:1.4;
       text-align:left;
       width:100%;
@@ -123,18 +125,19 @@
 <body>
   <div class="card">
     <div class="avatar">
-      <img src="https://i.postimg.cc/fb78HJPH/1000068123-artguru.png" alt="TM Unicreat">
+      <img src="https://i.postimg.cc/T1R3FkJ5/Beauty-Plus-IMAGE-ENHANCER-1769508117758.jpg" alt="Unicreat">
     </div>
     <div class="name">
-      TM Unicreat <a style="color:#608aff;">™</a>
+      Unicreat
 <svg xmlns="http://www.w3.org/2000/svg" fill="#4790fb" width="28" height="28" viewBox="0 0 30 30" style="transform: translateY(5px);"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.201 1.122a1 1 0 0 1 1.332.357l1.307 2.138 2.506.063a1 1 0 0 1 .974.975l.063 2.505 2.139 1.307a1 1 0 0 1 .356 1.332L21.68 12l1.198 2.201a1 1 0 0 1-.357 1.332l-2.138 1.307-.063 2.506a1 1 0 0 1-.974.974l-2.506.063-1.307 2.139a1 1 0 0 1-1.332.356L12 21.68l-2.201 1.198a1 1 0 0 1-1.332-.357L7.16 20.383l-2.506-.063a1 1 0 0 1-.974-.974l-.063-2.506-2.138-1.307a1 1 0 0 1-.357-1.332L2.32 12 1.122 9.799a1 1 0 0 1 .357-1.332L3.617 7.16l.063-2.505a1 1 0 0 1 .974-.975l2.506-.063L8.467 1.48A1 1 0 0 1 9.8 1.122L12 2.32l2.201-1.198zm2.44 9.146a1 1 0 1 0-1.281-1.536l-.067.055a43.003 43.003 0 0 0-4.852 4.74l-1.734-1.734a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.475-.067l.056-.067a41 41 0 0 1 5.25-5.25l.066-.055z"></path></svg>
     </div>
-    <div class="role">Pembuat — Tommy Adhelyno | Developer</div>
-    <div class="bio">TOMMY WEB APPS — keterangan: alat keyboard multi fungsi. pencarian unicode teks kumpulan karakter teks symbol icon dan emoji. serta pembuatan gambar sampul dan foto kreatif juga id card pw</div>
-    <div class="description">Multi teks unicode generator • create images • create ID card PW (free Apps)</div>
+    <div class="role">Design: Tommy Adhelyno | v.27</div>
+    <div class="bio">TOMMY WEB APP — keterangan: Alat *Tools-fb 
+    *keyboard multi fungsi. *unicode teks kumpulan karakter teks symbol icon dan emoji. serta pembuatan gambar sampul dan foto kreatif juga *sim-id card pw</div>
+    <div class="description">Multi tools (free Apps)</div>
     <button class="btn" onclick="window.location.href='https://tommydev27.github.io/Tommy-Web-Apps'">Lanjut</button>
     <footer>
-      <span>© 2023 TM Unicreat — All rights reserved</span>
+      <span>© 2023 Unicreat — All rights reserved</span>
 <button class="share-btn" id="shareBtn">
    share<i class="fa fa-share-alt" style="font-size:22px;"></i>
 </button>
@@ -146,8 +149,8 @@
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'TM Unicreat APK',
-          text: 'Download TM Unicreat App sekarang!',
+          title: 'Unicreat APK',
+          text: 'Download Unicreat App sekarang!',
           url: apkLink
         });
         console.log('Berhasil dibagikan');
